@@ -1,9 +1,13 @@
 from dotenv import load_dotenv
 import streamlit as st
 from langchain_groq import ChatGroq
+import os
 
 #load the env variables
 load_dotenv()  #eza l dotenv b folder tene mn7ot l path load_dotenv("")
+groq_api_key = os.getenv("GROQ_API_KEY")
+
+
 
 # streamlit page setup
 st.set_page_config(
